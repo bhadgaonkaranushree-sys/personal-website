@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anushree — Mandela Art</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">Anushree</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#book" class="nav-book">Book a Slot</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+    <a href="#schedule" onclick="toggleMenu()">Schedule</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#book" onclick="toggleMenu()" class="mobile-book">Book a Slot</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-mandela">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="mandela-svg">
+        <g transform="translate(200,200)">
+          <!-- Outer rings -->
+          <circle r="195" fill="none" stroke="#c4a882" stroke-width="1" opacity="0.4"/>
+          <circle r="180" fill="none" stroke="#c4a882" stroke-width="0.5" opacity="0.3"/>
+          <!-- Petal layer 1 -->
+          <g opacity="0.6">
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(0)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(22.5)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(45)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(67.5)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(90)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(112.5)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(135)"/>
+            <ellipse rx="18" ry="90" fill="#b5886e" opacity="0.5" transform="rotate(157.5)"/>
+          </g>
+          <!-- Petal layer 2 -->
+          <g opacity="0.5">
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(11.25)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(33.75)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(56.25)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(78.75)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(101.25)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(123.75)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(146.25)"/>
+            <ellipse rx="12" ry="60" fill="#8a6a55" opacity="0.6" transform="rotate(168.75)"/>
+          </g>
+          <!-- Inner detail circles -->
+          <circle r="80" fill="none" stroke="#c4a882" stroke-width="1" opacity="0.5"/>
+          <circle r="55" fill="none" stroke="#b5886e" stroke-width="1.5" opacity="0.5"/>
+          <circle r="35" fill="#d4b896" opacity="0.2"/>
+          <circle r="20" fill="#b5886e" opacity="0.4"/>
+          <circle r="8" fill="#8a6a55" opacity="0.6"/>
+          <!-- Dot ring -->
+          <g opacity="0.7">
+            <circle cx="90" cy="0" r="3" fill="#b5886e"/>
+            <circle cx="63.6" cy="63.6" r="3" fill="#b5886e"/>
+            <circle cx="0" cy="90" r="3" fill="#b5886e"/>
+            <circle cx="-63.6" cy="63.6" r="3" fill="#b5886e"/>
+            <circle cx="-90" cy="0" r="3" fill="#b5886e"/>
+            <circle cx="-63.6" cy="-63.6" r="3" fill="#b5886e"/>
+            <circle cx="0" cy="-90" r="3" fill="#b5886e"/>
+            <circle cx="63.6" cy="-63.6" r="3" fill="#b5886e"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Mandela Art for Kids</p>
+      <h1>Where stillness<br><em>becomes art</em></h1>
+      <p class="hero-sub">A community art space teaching children the meditative beauty of Mandela drawing — one petal at a time.</p>
+      <a href="#book" class="btn-primary">Book a Slot</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <div class="about-img-placeholder">
+          <span>Your photo here</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">About me</p>
+        <h2>Hello, I'm Anushree</h2>
+        <p>I'm a Mandela artist and community educator based in your city. What began as a personal practice of calm and focus has grown into something I love sharing — especially with young minds.</p>
+        <p>Mandela art combines geometry, symmetry, and patience. For children, it's not just a drawing exercise — it builds concentration, fine motor skills, and a quiet confidence in their own creative expression.</p>
+        <p>I run small, intimate sessions from my studio, welcoming children of all skill levels. No experience needed — just curiosity and a willingness to sit with something beautiful.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+    <div class="gallery-header">
+      <p class="section-label">Artwork</p>
+      <h2>A glimpse into the work</h2>
+      <p class="gallery-sub">Browse through pieces created in sessions — by me, and by the kids who surprise me every time.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Placeholder cards -->
+      <div class="gallery-card placeholder-card">
+        <span>Artwork 1</span>
+      </div>
+      <div class="gallery-card placeholder-card">
+        <span>Artwork 2</span>
+      </div>
+      <div class="gallery-card placeholder-card">
+        <span>Artwork 3</span>
+      </div>
+      <div class="gallery-card placeholder-card">
+        <span>Artwork 4</span>
+      </div>
+      <div class="gallery-card placeholder-card">
+        <span>Artwork 5</span>
+      </div>
+      <div class="gallery-card placeholder-card">
+        <span>Artwork 6</span>
+      </div>
+    </div>
+    <!-- Upload button (can be hidden in production or linked to a CMS) -->
+    <div class="gallery-upload">
+      <label for="artUpload" class="btn-outline">+ Add Artwork</label>
+      <input type="file" id="artUpload" accept="image/*" multiple onchange="previewArt(event)" />
+      <p class="upload-note">Images are previewed locally. To permanently add artwork, place files in the <code>public/artwork</code> folder and update the gallery in <code>index.html</code>.</p>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="schedule">
+    <div class="schedule-inner">
+      <div class="schedule-text">
+        <p class="section-label">Schedule</p>
+        <h2>Session timings</h2>
+        <p>All sessions are held in a quiet, comfortable studio space. Groups are kept small so every child gets personal attention.</p>
+      </div>
+      <div class="schedule-table">
+        <div class="schedule-row header-row">
+          <span>Day</span>
+          <span>Time</span>
+          <span>Age Group</span>
+          <span>Spots</span>
+        </div>
+        <div class="schedule-row">
+          <span>Saturday</span>
+          <span>10:00 – 11:30 am</span>
+          <span>Ages 6–9</span>
+          <span class="spots open">Open</span>
+        </div>
+        <div class="schedule-row">
+          <span>Saturday</span>
+          <span>12:00 – 1:30 pm</span>
+          <span>Ages 10–14</span>
+          <span class="spots open">Open</span>
+        </div>
+        <div class="schedule-row">
+          <span>Sunday</span>
+          <span>10:00 – 11:30 am</span>
+          <span>Ages 6–9</span>
+          <span class="spots full">Full</span>
+        </div>
+        <div class="schedule-row">
+          <span>Sunday</span>
+          <span>12:00 – 1:30 pm</span>
+          <span>Ages 10–14</span>
+          <span class="spots open">Open</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" class="book">
+    <div class="book-inner">
+      <p class="section-label">Book a slot</p>
+      <h2>Ready to join a session?</h2>
+      <p>Fill in your details and I'll get back to you within 24 hours to confirm your spot.</p>
+      <div class="book-form">
+        <div class="form-row">
+          <input type="text" placeholder="Parent / Guardian name" />
+          <input type="text" placeholder="Child's name & age" />
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Your email address" />
+          <input type="tel" placeholder="Your phone number" />
+        </div>
+        <select>
+          <option value="" disabled selected>Choose a session</option>
+          <option>Saturday 10:00–11:30 am — Ages 6–9</option>
+          <option>Saturday 12:00–1:30 pm — Ages 10–14</option>
+          <option>Sunday 12:00–1:30 pm — Ages 10–14</option>
+        </select>
+        <textarea placeholder="Any questions or notes for me?"></textarea>
+        <button class="btn-primary" onclick="submitBooking()">Book Now ✦</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="section-label">Get in touch</p>
+    <h2>Contact me</h2>
+    <div class="contact-cards">
+      <a href="mailto:your@email.com" class="contact-card">
+        <div class="contact-icon">✉</div>
+        <div>
+          <p class="contact-type">Email</p>
+          <p class="contact-val">your@email.com</p>
+        </div>
+      </a>
+      <a href="tel:+910000000000" class="contact-card">
+        <div class="contact-icon">✆</div>
+        <div>
+          <p class="contact-type">Phone / WhatsApp</p>
+          <p class="contact-val">+91 00000 00000</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Anushree · Mandela Art for Kids</p>
+    <p class="footer-sub">Made with love, one circle at a time.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
