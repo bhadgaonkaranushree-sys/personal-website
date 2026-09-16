@@ -36,109 +36,121 @@
     <div class="hero-mandela">
       <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="mandala-svg">
         <defs>
-          <path id="outer-petal" d="M 0,-22 C 17,-43 20,-76 0,-108 C -20,-76 -17,-43 0,-22 Z"/>
-          <path id="inner-petal" d="M 0,-12 C 10,-28 12,-52 0,-72 C -12,-52 -10,-28 0,-12 Z"/>
-          <path id="mini-petal" d="M 0,-7 C 6,-15 6,-27 0,-36 C -6,-27 -6,-15 0,-7 Z"/>
-          <circle id="dot" cx="0" cy="-126" r="3.2"/>
-          <circle id="small-dot" cx="0" cy="-91" r="2"/>
+          <path id="lace-petal" d="M0,-174 C15,-164 22,-145 0,-121 C-22,-145 -15,-164 0,-174 Z"/>
+          <path id="leaf-petal" d="M0,-137 C22,-119 25,-91 0,-64 C-25,-91 -22,-119 0,-137 Z"/>
+          <path id="teardrop-petal" d="M0,-96 C18,-79 19,-53 0,-31 C-19,-53 -18,-79 0,-96 Z"/>
+          <path id="small-petal" d="M0,-58 C13,-46 13,-28 0,-17 C-13,-28 -13,-46 0,-58 Z"/>
+          <path id="outer-vein" d="M0,-126 C0,-143 0,-157 0,-168"/>
+          <path id="leaf-vein" d="M0,-70 C0,-91 0,-111 0,-130"/>
+          <circle id="outer-bead" cx="0" cy="-184" r="3"/>
+          <circle id="inner-bead" cx="0" cy="-111" r="2.5"/>
+          <circle id="tiny-bead" cx="0" cy="-75" r="1.8"/>
         </defs>
         <g transform="translate(200,200)">
-          <!-- Rich outer frame -->
-          <circle r="194" fill="#f8dfe5" opacity="0.38"/>
-          <circle r="191" fill="none" stroke="#0A3323" stroke-width="2"/>
-          <circle r="183" fill="none" stroke="#E56B8D" stroke-width="1.5" stroke-dasharray="2 7"/>
-          <circle r="174" fill="none" stroke="#839958" stroke-width="1"/>
+          <!-- Ornate outer frame -->
+          <circle r="195" fill="#f8dfe5" opacity="0.42"/>
+          <circle r="194" fill="none" stroke="#0A3323" stroke-width="2"/>
+          <circle r="187" fill="none" stroke="#E56B8D" stroke-width="1.5" stroke-dasharray="1 6"/>
+          <circle r="179" fill="none" stroke="#839958" stroke-width="1.2"/>
+          <circle r="171" fill="none" stroke="#0A3323" stroke-width="0.8" stroke-dasharray="5 4"/>
 
-          <!-- Large illustrated petal ring -->
-          <g fill="#E56B8D" stroke="#0A3323" stroke-width="1.1" opacity="0.92">
-            <use href="#outer-petal" transform="rotate(0)"/>
-            <use href="#outer-petal" transform="rotate(30)"/>
-            <use href="#outer-petal" transform="rotate(60)"/>
-            <use href="#outer-petal" transform="rotate(90)"/>
-            <use href="#outer-petal" transform="rotate(120)"/>
-            <use href="#outer-petal" transform="rotate(150)"/>
-            <use href="#outer-petal" transform="rotate(180)"/>
-            <use href="#outer-petal" transform="rotate(210)"/>
-            <use href="#outer-petal" transform="rotate(240)"/>
-            <use href="#outer-petal" transform="rotate(270)"/>
-            <use href="#outer-petal" transform="rotate(300)"/>
-            <use href="#outer-petal" transform="rotate(330)"/>
+          <!-- Sixteen pointed outer petals -->
+          <g fill="#E56B8D" stroke="#0A3323" stroke-width="1.1">
+            <use href="#lace-petal" transform="rotate(0)"/><use href="#lace-petal" transform="rotate(22.5)"/>
+            <use href="#lace-petal" transform="rotate(45)"/><use href="#lace-petal" transform="rotate(67.5)"/>
+            <use href="#lace-petal" transform="rotate(90)"/><use href="#lace-petal" transform="rotate(112.5)"/>
+            <use href="#lace-petal" transform="rotate(135)"/><use href="#lace-petal" transform="rotate(157.5)"/>
+            <use href="#lace-petal" transform="rotate(180)"/><use href="#lace-petal" transform="rotate(202.5)"/>
+            <use href="#lace-petal" transform="rotate(225)"/><use href="#lace-petal" transform="rotate(247.5)"/>
+            <use href="#lace-petal" transform="rotate(270)"/><use href="#lace-petal" transform="rotate(292.5)"/>
+            <use href="#lace-petal" transform="rotate(315)"/><use href="#lace-petal" transform="rotate(337.5)"/>
+          </g>
+          <g fill="none" stroke="#F7F4D5" stroke-width="1.2" opacity="0.9">
+            <use href="#outer-vein" transform="rotate(0)"/><use href="#outer-vein" transform="rotate(22.5)"/>
+            <use href="#outer-vein" transform="rotate(45)"/><use href="#outer-vein" transform="rotate(67.5)"/>
+            <use href="#outer-vein" transform="rotate(90)"/><use href="#outer-vein" transform="rotate(112.5)"/>
+            <use href="#outer-vein" transform="rotate(135)"/><use href="#outer-vein" transform="rotate(157.5)"/>
+            <use href="#outer-vein" transform="rotate(180)"/><use href="#outer-vein" transform="rotate(202.5)"/>
+            <use href="#outer-vein" transform="rotate(225)"/><use href="#outer-vein" transform="rotate(247.5)"/>
+            <use href="#outer-vein" transform="rotate(270)"/><use href="#outer-vein" transform="rotate(292.5)"/>
+            <use href="#outer-vein" transform="rotate(315)"/><use href="#outer-vein" transform="rotate(337.5)"/>
           </g>
 
-          <!-- Fine petal veins and dot details -->
-          <g fill="none" stroke="#f8dfe5" stroke-width="1.2" opacity="0.9">
-            <path d="M0,-31 C0,-50 0,-72 0,-99" transform="rotate(0)"/>
-            <path d="M0,-31 C0,-50 0,-72 0,-99" transform="rotate(30)"/>
-            <path d="M0,-31 C0,-50 0,-72 0,-99" transform="rotate(60)"/>
-            <path d="M0,-31 C0,-50 0,-72 0,-99" transform="rotate(90)"/>
-            <path d="M0,-31 C0,-50 0,-72 0,-99" transform="rotate(120)"/>
-            <path d="M0,-31 C0,-50 0,-72 0,-99" transform="rotate(150)"/>
+          <!-- Beaded lace between petal layers -->
+          <g fill="#839958" stroke="#0A3323" stroke-width="0.6">
+            <use href="#outer-bead" transform="rotate(0)"/><use href="#outer-bead" transform="rotate(22.5)"/>
+            <use href="#outer-bead" transform="rotate(45)"/><use href="#outer-bead" transform="rotate(67.5)"/>
+            <use href="#outer-bead" transform="rotate(90)"/><use href="#outer-bead" transform="rotate(112.5)"/>
+            <use href="#outer-bead" transform="rotate(135)"/><use href="#outer-bead" transform="rotate(157.5)"/>
+            <use href="#outer-bead" transform="rotate(180)"/><use href="#outer-bead" transform="rotate(202.5)"/>
+            <use href="#outer-bead" transform="rotate(225)"/><use href="#outer-bead" transform="rotate(247.5)"/>
+            <use href="#outer-bead" transform="rotate(270)"/><use href="#outer-bead" transform="rotate(292.5)"/>
+            <use href="#outer-bead" transform="rotate(315)"/><use href="#outer-bead" transform="rotate(337.5)"/>
           </g>
 
-          <!-- Moss green second ring -->
-          <circle r="126" fill="none" stroke="#0A3323" stroke-width="1" opacity="0.8"/>
-          <g fill="#839958" stroke="#0A3323" stroke-width="0.8">
-            <use href="#dot" transform="rotate(0)"/>
-            <use href="#dot" transform="rotate(30)"/>
-            <use href="#dot" transform="rotate(60)"/>
-            <use href="#dot" transform="rotate(90)"/>
-            <use href="#dot" transform="rotate(120)"/>
-            <use href="#dot" transform="rotate(150)"/>
-            <use href="#dot" transform="rotate(180)"/>
-            <use href="#dot" transform="rotate(210)"/>
-            <use href="#dot" transform="rotate(240)"/>
-            <use href="#dot" transform="rotate(270)"/>
-            <use href="#dot" transform="rotate(300)"/>
-            <use href="#dot" transform="rotate(330)"/>
+          <!-- Sixteen overlapping leaf petals -->
+          <circle r="151" fill="none" stroke="#105666" stroke-width="1"/>
+          <g fill="#839958" stroke="#0A3323" stroke-width="1">
+            <use href="#leaf-petal" transform="rotate(11.25)"/><use href="#leaf-petal" transform="rotate(33.75)"/>
+            <use href="#leaf-petal" transform="rotate(56.25)"/><use href="#leaf-petal" transform="rotate(78.75)"/>
+            <use href="#leaf-petal" transform="rotate(101.25)"/><use href="#leaf-petal" transform="rotate(123.75)"/>
+            <use href="#leaf-petal" transform="rotate(146.25)"/><use href="#leaf-petal" transform="rotate(168.75)"/>
+            <use href="#leaf-petal" transform="rotate(191.25)"/><use href="#leaf-petal" transform="rotate(213.75)"/>
+            <use href="#leaf-petal" transform="rotate(236.25)"/><use href="#leaf-petal" transform="rotate(258.75)"/>
+            <use href="#leaf-petal" transform="rotate(281.25)"/><use href="#leaf-petal" transform="rotate(303.75)"/>
+            <use href="#leaf-petal" transform="rotate(326.25)"/><use href="#leaf-petal" transform="rotate(348.75)"/>
+          </g>
+          <g fill="none" stroke="#F7F4D5" stroke-width="1">
+            <use href="#leaf-vein" transform="rotate(11.25)"/><use href="#leaf-vein" transform="rotate(33.75)"/>
+            <use href="#leaf-vein" transform="rotate(56.25)"/><use href="#leaf-vein" transform="rotate(78.75)"/>
+            <use href="#leaf-vein" transform="rotate(101.25)"/><use href="#leaf-vein" transform="rotate(123.75)"/>
+            <use href="#leaf-vein" transform="rotate(146.25)"/><use href="#leaf-vein" transform="rotate(168.75)"/>
+            <use href="#leaf-vein" transform="rotate(191.25)"/><use href="#leaf-vein" transform="rotate(213.75)"/>
+            <use href="#leaf-vein" transform="rotate(236.25)"/><use href="#leaf-vein" transform="rotate(258.75)"/>
+            <use href="#leaf-vein" transform="rotate(281.25)"/><use href="#leaf-vein" transform="rotate(303.75)"/>
+            <use href="#leaf-vein" transform="rotate(326.25)"/><use href="#leaf-vein" transform="rotate(348.75)"/>
           </g>
 
-          <!-- Layered inner petals -->
-          <g fill="#105666" stroke="#0A3323" stroke-width="0.9" opacity="0.95">
-            <use href="#inner-petal" transform="rotate(15)"/>
-            <use href="#inner-petal" transform="rotate(45)"/>
-            <use href="#inner-petal" transform="rotate(75)"/>
-            <use href="#inner-petal" transform="rotate(105)"/>
-            <use href="#inner-petal" transform="rotate(135)"/>
-            <use href="#inner-petal" transform="rotate(165)"/>
-            <use href="#inner-petal" transform="rotate(195)"/>
-            <use href="#inner-petal" transform="rotate(225)"/>
-            <use href="#inner-petal" transform="rotate(255)"/>
-            <use href="#inner-petal" transform="rotate(285)"/>
-            <use href="#inner-petal" transform="rotate(315)"/>
-            <use href="#inner-petal" transform="rotate(345)"/>
+          <!-- Geometric middle ring -->
+          <circle r="116" fill="none" stroke="#E56B8D" stroke-width="2" stroke-dasharray="1 5"/>
+          <circle r="108" fill="none" stroke="#0A3323" stroke-width="1"/>
+          <g fill="#E56B8D" stroke="#0A3323" stroke-width="0.8">
+            <use href="#inner-bead" transform="rotate(0)"/><use href="#inner-bead" transform="rotate(45)"/>
+            <use href="#inner-bead" transform="rotate(90)"/><use href="#inner-bead" transform="rotate(135)"/>
+            <use href="#inner-bead" transform="rotate(180)"/><use href="#inner-bead" transform="rotate(225)"/>
+            <use href="#inner-bead" transform="rotate(270)"/><use href="#inner-bead" transform="rotate(315)"/>
           </g>
-          <circle r="75" fill="none" stroke="#E56B8D" stroke-width="2" stroke-dasharray="1 5"/>
 
-          <!-- Decorative inner rosette -->
-          <g fill="#f0a3b7" stroke="#0A3323" stroke-width="0.8">
-            <use href="#mini-petal" transform="rotate(0)"/>
-            <use href="#mini-petal" transform="rotate(45)"/>
-            <use href="#mini-petal" transform="rotate(90)"/>
-            <use href="#mini-petal" transform="rotate(135)"/>
-            <use href="#mini-petal" transform="rotate(180)"/>
-            <use href="#mini-petal" transform="rotate(225)"/>
-            <use href="#mini-petal" transform="rotate(270)"/>
-            <use href="#mini-petal" transform="rotate(315)"/>
+          <!-- Deep teal teardrop ring -->
+          <g fill="#105666" stroke="#0A3323" stroke-width="1">
+            <use href="#teardrop-petal" transform="rotate(0)"/><use href="#teardrop-petal" transform="rotate(45)"/>
+            <use href="#teardrop-petal" transform="rotate(90)"/><use href="#teardrop-petal" transform="rotate(135)"/>
+            <use href="#teardrop-petal" transform="rotate(180)"/><use href="#teardrop-petal" transform="rotate(225)"/>
+            <use href="#teardrop-petal" transform="rotate(270)"/><use href="#teardrop-petal" transform="rotate(315)"/>
           </g>
-          <circle r="31" fill="#E56B8D" opacity="0.9"/>
-          <circle r="23" fill="#F7F4D5" stroke="#0A3323" stroke-width="1.2"/>
-          <circle r="12" fill="#105666"/>
-          <circle r="5" fill="#E56B8D"/>
+          <circle r="83" fill="none" stroke="#F7F4D5" stroke-width="1" stroke-dasharray="3 3"/>
 
-          <!-- Small alternating bead ring -->
-          <g fill="#E56B8D">
-            <use href="#small-dot" transform="rotate(0)"/>
-            <use href="#small-dot" transform="rotate(30)"/>
-            <use href="#small-dot" transform="rotate(60)"/>
-            <use href="#small-dot" transform="rotate(90)"/>
-            <use href="#small-dot" transform="rotate(120)"/>
-            <use href="#small-dot" transform="rotate(150)"/>
-            <use href="#small-dot" transform="rotate(180)"/>
-            <use href="#small-dot" transform="rotate(210)"/>
-            <use href="#small-dot" transform="rotate(240)"/>
-            <use href="#small-dot" transform="rotate(270)"/>
-            <use href="#small-dot" transform="rotate(300)"/>
-            <use href="#small-dot" transform="rotate(330)"/>
+          <!-- Eight-pointed floral center -->
+          <g fill="#f0a3b7" stroke="#0A3323" stroke-width="1">
+            <use href="#small-petal" transform="rotate(0)"/><use href="#small-petal" transform="rotate(45)"/>
+            <use href="#small-petal" transform="rotate(90)"/><use href="#small-petal" transform="rotate(135)"/>
+            <use href="#small-petal" transform="rotate(180)"/><use href="#small-petal" transform="rotate(225)"/>
+            <use href="#small-petal" transform="rotate(270)"/><use href="#small-petal" transform="rotate(315)"/>
+          </g>
+          <circle r="42" fill="#E56B8D" stroke="#0A3323" stroke-width="1.5"/>
+          <circle r="32" fill="#F7F4D5" stroke="#105666" stroke-width="2"/>
+          <circle r="22" fill="#105666"/>
+          <circle r="10" fill="#E56B8D" stroke="#F7F4D5" stroke-width="2"/>
+          <circle r="4" fill="#0A3323"/>
+
+          <!-- Tiny final bead ring -->
+          <g fill="#839958">
+            <use href="#tiny-bead" transform="rotate(0)"/><use href="#tiny-bead" transform="rotate(30)"/>
+            <use href="#tiny-bead" transform="rotate(60)"/><use href="#tiny-bead" transform="rotate(90)"/>
+            <use href="#tiny-bead" transform="rotate(120)"/><use href="#tiny-bead" transform="rotate(150)"/>
+            <use href="#tiny-bead" transform="rotate(180)"/><use href="#tiny-bead" transform="rotate(210)"/>
+            <use href="#tiny-bead" transform="rotate(240)"/><use href="#tiny-bead" transform="rotate(270)"/>
+            <use href="#tiny-bead" transform="rotate(300)"/><use href="#tiny-bead" transform="rotate(330)"/>
           </g>
         </g>
       </svg>
