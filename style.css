@@ -5,10 +5,10 @@
   --bg: #F7F4D5;
   --bg-warm: #eeebc8;
   --bg-dark: #0A3323;
-  --accent: #D3968C;
-  --accent-dark: #b87b71;
-  --accent-light: #e8b5af;
-  --accent-pale: #f5e0dd;
+  --accent: #E56B8D;
+  --accent-dark: #c95272;
+  --accent-light: #f0a3b7;
+  --accent-pale: #f8dfe5;
   --moss: #839958;
   --midnight: #105666;
   --line: #c8c9a0;
@@ -42,7 +42,7 @@ nav {
 .nav-logo {
   font-family: var(--font-serif);
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--ink);
 }
@@ -103,7 +103,7 @@ nav ul a:hover { color: var(--ink); }
   position: absolute;
   top: -100px; right: -100px;
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(211,150,140,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(229,107,141,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 .hero::after {
@@ -118,7 +118,7 @@ nav ul a:hover { color: var(--ink); }
   flex-shrink: 0;
   width: 360px; height: 360px;
   animation: slowspin 70s linear infinite;
-  filter: drop-shadow(0 0 30px rgba(211,150,140,0.25));
+  filter: drop-shadow(0 0 30px rgba(229,107,141,0.25));
 }
 .mandela-svg { width: 100%; height: 100%; }
 @keyframes slowspin {
@@ -161,7 +161,7 @@ nav ul a:hover { color: var(--ink); }
   letter-spacing: 0.05em;
   border: none; border-radius: 2px; cursor: pointer;
   transition: background 0.2s, transform 0.15s;
-  box-shadow: 0 4px 20px rgba(211,150,140,0.3);
+  box-shadow: 0 4px 20px rgba(229,107,141,0.3);
 }
 .btn-primary:hover {
   background: var(--accent-dark);
@@ -198,6 +198,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: var(--ink);
 }
+h2 strong { font-weight: 700; }
 
 /* ===== ABOUT ===== */
 .about { background: #edf0d8; }
@@ -305,7 +306,7 @@ h2 {
   text-align: center;
 }
 .spots.open { background: rgba(131,153,88,0.2); color: #a8c270; }
-.spots.full { background: rgba(211,150,140,0.15); color: #c49090; }
+.spots.full { background: rgba(229,107,141,0.15); color: #c95272; }
 
 /* ===== BOOK ===== */
 .book { background: #edf0d8; }
@@ -359,7 +360,7 @@ h2 {
 }
 .contact-card:hover {
   border-color: var(--accent);
-  background: rgba(211,150,140,0.08);
+  background: rgba(229,107,141,0.08);
   transform: translateY(-2px);
 }
 .contact-icon { font-size: 1.5rem; color: var(--accent); line-height: 1; }
